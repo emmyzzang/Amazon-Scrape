@@ -38,11 +38,7 @@ app.get("/couches", function(req, res) {
     console.log('insanity check...');
     // Select each element in the HTML body from which you want information.
     $('#resultsCol').find('span > span').each(function(i, element) {
-      //console.log(element);
-      // For each head, there's an element that is being parsed thru. For each element,
-      // it grabs the child of that element
-      //var price = $(element).children().attr(".aria-label");
-      //console.log(price);
+
       let textField = $(element).children().text();
       console.log(textField)
       if(textField.includes("$")) {
@@ -85,10 +81,6 @@ app.get("/couches", function(req, res) {
   });
 });
 
-
-
-/* TODO: make two more routes
- * -/-/-/-/-/-/-/-/-/-/-/-/- */
 
 // Listen on port 3000
 app.listen(3000, function() {
