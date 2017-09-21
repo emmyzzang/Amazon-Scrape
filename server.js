@@ -30,7 +30,7 @@ app.get("/couches", function(req, res) {
     // '$' becomes a shorthand for cheerio's selector commands, much like jQuery's '$'
     let $ = cheerio.load(html);
 
-    // Emoty arrays to save the data that we'll scrape
+    // Empty arrays to save the data that we'll scrape
     let results = [];
     let prices = [];
     let ratings = [];
