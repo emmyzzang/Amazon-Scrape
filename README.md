@@ -1,7 +1,5 @@
 # Amazon-Scrape
 
-A tiny backend scraping script I wrote for experimental purposes. 
-
 This server script tests the feasibility of scraping a large and complex ecommerce site such as Amazon, and the security obstacles that may arise. 
 
 First, create a GET route that queries the Amazon website for 'couches'. 
